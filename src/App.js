@@ -11,7 +11,10 @@ class App extends Component {
     this.state = {users: []};
   }
   componentDidMount() {
-
+    this.props.loadContacts();
+    this.props.loadVehicles();
+    this.props.loadComments();
+    this.props.loadProducts();
   }
   render() {
     return (
